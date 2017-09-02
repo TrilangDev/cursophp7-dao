@@ -36,6 +36,8 @@ $aluno->insert();
 echo $aluno;
 */
 
+//ATUALIZA DB 
+/*
 $usuario = new Usuario();
 
 $usuario->loadById(8);
@@ -43,5 +45,17 @@ $usuario->loadById(8);
 $usuario->update('novo', '12348765');
 
 echo $usuario;
+*/
+
+//DELETA DB
+
+$usuario = new Usuario();
+
+$usuario->loadById(7);
+
+$usuario->delete();
+
+echo $usuario;
+
 
 ?>
